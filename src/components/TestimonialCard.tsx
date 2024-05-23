@@ -26,7 +26,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           loading="lazy"
         />
         <div>
-          <p className="font-semibold">{username}</p>
+          <p className="font-semibold text-lg">{username}</p>
           <p className="text-sm text-neutral-600">{userHandle}</p>
         </div>
       </div>
