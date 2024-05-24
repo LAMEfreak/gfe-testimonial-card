@@ -7,6 +7,7 @@ const cardData = {
   userHandle: "@sarahdole",
   cardMessage:
     "I've been searching for high-quality abstract images for my design projects, and I'm thrilled to have found this platform. The variety and depth of creativity are astounding!",
+  alt: 'Adult woman leaving a good testimonial'
 };
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         username={cardData.username}
         userHandle={cardData.userHandle}
         cardMessage={cardData.cardMessage}
+        alt={cardData.alt}
       />
     </div>
   );

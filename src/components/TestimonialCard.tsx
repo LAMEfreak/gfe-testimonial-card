@@ -5,6 +5,7 @@ interface TestimonialCardProps {
   username: string;
   userHandle: string;
   cardMessage: string;
+  alt?: string;
 }
 
 // Use React.FC<TestimonialCardProps> to apply the defined props to the component
@@ -15,6 +16,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   username,
   userHandle,
   cardMessage,
+  alt,
 }): React.JSX.Element => {
   return (
     <div className="w-[340px] p-6 rounded-lg bg-white border-neutral-200 shadow-md">
@@ -22,7 +24,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <img
           src={avatarImg}
           width="48px"
-          alt="Adult woman leaving a good testimonial"
+          alt={alt || "Profile thumbnail"}
           loading="lazy"
         />
         <div>
